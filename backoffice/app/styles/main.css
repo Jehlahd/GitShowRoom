@@ -1,0 +1,378 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.list-contact {
+  padding-left: 0%;
+  color: inherit;
+  background-color: #f8f5f0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+body {
+  padding: 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  /*border-bottom: 1px solid #e5e5e5;*/
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+
+.footer {
+  padding-left: 15px;
+  padding-top: 19px;
+  color: #777;
+  /*border-top: 1px solid #e5e5e5;*/
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.articles {
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.productbox {
+  background-color: #f8f5f0;
+  padding:5px;
+  margin-bottom:10px;
+  -webkit-box-shadow: 0 8px 6px -6px  #999;
+  -moz-box-shadow: 0 8px 6px -6px  #999;
+  box-shadow: 0 8px 6px -6px #999;
+  margin-left: 1px;
+  border: 1px solid #e5e5e5;
+}
+
+.producttitle {
+  font-weight:bold;
+  padding:5px 0 5px 0;
+}
+
+.productprice {
+  border-top:1px solid #dadada;
+  padding-top:5px;
+}
+
+.pricetext {
+  font-weight:bold;
+  font-size:1.4em;
+}
+
+.ico.glyphicon{
+  font-size: 15px;
+}
+
+.main-alert{
+  position: absolute;
+  top: 70px;
+  left: 5px;
+  right: 5px;
+
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/*.main-alert:after {
+  content: "\f02d";
+  font-family: "icomoon";
+  position: absolute;
+  left: 10px;
+}*/
+
+.alert-hidden{
+  visibility:hidden;
+}
+
+.form-signin {
+  max-width: 280px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top:50px;
+}
+.form-signin .form-signin-heading, .form-signin {
+  margin-bottom: 10px;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: none;
+  border-left-style: solid;
+
+}
+.form-signin input[type="password"] {
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+}
+
+.ta-toolbar {
+  background-color: #F0F0F0;
+  padding: 10px 10px 5px;
+  margin-left: 0px; /* Override bootstrap */
+  border: 1px solid #EEE;
+}
+
+.ta-toolbar .btn-group {
+  margin-bottom: 5px;
+}
+
+.ta-editor, .white-box {
+  padding: 10px;
+  background-color: #FFF;
+  border: 3px solid #EEE;
+  margin-left: -5px;
+}
+
+textarea.ta-bind {
+  width: 100%;
+}
+
+/*-------------------------------------*/
+/* BACKGROUNDS */
+.background-block {
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+body{
+  background-image: url("../images/swirl_pattern.png");
+  background-repeat: repeat;
+}
+
+.background-block---main{
+  background-image: url("../images/header.jpg");
+  margin: 40px 0 0 0;
+}
+
+/*-------------------------------------*/
+/* OVERLAY */
+.overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text-on-overlay{
+  position: relative;
+  z-index: 1;
+}
+/*-------------------------------------*/
+/*LABEL*/
+.label{
+  color: #98978b;
+  font-size: 120%;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+.label-required:after{
+  content: '*';
+  color: red;
+  margin: 0 0 0 5px;
+}
+
+.icon-round-wrap{
+  color:#fff;
+  background-color: #000066;
+}
+
+/* Helpers: Icons */
+
+.icon-left {
+  margin: 0 10px 0 0;
+}
+
+.icon-right {
+  margin: 0 0 0 10px;
+}
+
+.icon-round-wrap {
+  font-size: 16px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+}
+
+.dead-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*-------------------------------------*/
+/*BANNER*/
+
+.banner-img-block{
+  margin: 0 auto 25px auto;
+  width: 840px;
+}
+
+.banner-img{
+  float:left;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 280px;
+  transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transform-origin: top;
+}
+
+.banner-img-animate{
+  transition: all 0.4s linear 0.8s;
+  -webkit-transition: all 0.4s linear 0.8s;
+}
+
+.banner-img-1{
+  top: 40px;
+  left: 280px;
+  transform: scale(0.78);
+  -webkit-transform: scale(0.78);
+  z-index: 2;
+}
+
+.banner-img-1.banner-img-animate{
+  left : 10px;
+  top: 47px;
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+}
+
+.banner-img-2{
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+  z-index: 3;
+}
+.banner-img-2.banner-img-animate{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.banner-img-3{
+  top: 80px;
+  right: 280px;
+  transform: scale(0.71);
+  -webkit-transform: scale(0.71);
+  z-index: 1;
+}
+
+.banner-img-3.banner-img-animate{
+  right: 10px;
+  transform: scale(0.85);
+  -webkit-transform: scale(0.85);
+  top: 47px;
+}
+/*-------------------------------------*/
+/* Helpers: Floats and Clearing */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+

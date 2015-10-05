@@ -1,0 +1,13 @@
+<h1 class="lead">New Article</h1>
+
+<div class="row marketing">
+  <h4>Title</h4>
+  <text-angular name="titre" ng-model="titre" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed" ta-toolbar-button-class="btn btn-default btn-sm"></text-angular>
+  <br/>
+  <h4>Resume</h4>
+  <text-angular name="desc" ng-model="desc" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed" ta-toolbar-button-class="btn btn-default btn-sm"></text-angular>
+  <br/>
+  <h4>Storyline</h4>
+  <text-angular name="bodyModel" ng-model="bodyModel" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed" ta-toolbar-button-class="btn btn-default btn-sm"></text-angular>
+</div>
+<button class="btn btn-default pull-right" ng-click="addArticle()" ng-show="isAuthenticated()">Add Article</button>

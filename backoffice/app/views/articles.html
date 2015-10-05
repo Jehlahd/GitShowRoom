@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <a ui-sref="articleCreation"><button class="btn btn-default pull-right" ng-show="isAuthenticated()">Add Article</button></a>
+  </div>
+</div>
+
+<div class="panel panel-success" ng-repeat="article in articles|filter:searchQuery">
+  <div class="panel-heading">
+    <h1 class="panel-title" ta-bind ng-model="article.title"></h1>
+  </div>
+  <div class="panel-body">
+    <p ta-bind ng-model="article.m_desc">...</p>
+    <a ui-sref=article({articleId:'{{article._id}}'})>Full article...</a>
+  </div>
+</div>

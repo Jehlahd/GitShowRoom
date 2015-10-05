@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+     <div class="col-md-4" ng-repeat="product in products|filter:searchQuery">
+       <div class="productbox">
+          <img src="http://placehold.it/460x250/e67e22/ffffff&text=HTML5" class="img-responsive">
+        <div class="producttitle">{{product.title}}</div>
+        <div class="productprice"><div class="pull-right"><a ui-sref=product({productId:'{{product._id}}'}) class="btn btn-danger btn-sm"><span class="ico glyphicon glyphicon-shopping-cart "></span> Buy</a></div><div class="pricetext">{{product.price}}$</div></div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{q}}
+

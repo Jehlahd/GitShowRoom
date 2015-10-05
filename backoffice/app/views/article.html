@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <button class="btn btn-default btn-lg btn-block" ng-click="toogleEdition()" ng-hide="edition">Modifier article</button>
+    <button class="btn btn-info btn-lg btn-block" ng-click="toogleEdition()" ng-show="edition">Aperçu</button>
+  </div>
+</div>
+<div class="jumbotron" ng-hide="edition">
+  <h1 ta-bind ng-model="article.title"></h1>
+</div>
+
+<div class="row marketing" ng-hide="edition">
+  <h4>Resume</h4>
+  <p ta-bind ng-model="article.m_desc">
+  </p>
+
+  <h4>Storyline</h4>
+  <p ta-bind ng-model="article.desc">
+  </p>
+</div>
+
+<div class="row marketing" ng-show="edition">
+  <h4>Title</h4>
+  <text-angular name="titre" ng-model="titre" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed" ta-toolbar-button-class="btn btn-default btn-sm"></text-angular>
+  <br/>
+  <h4>Resume</h4>
+  <text-angular name="desc" ng-model="desc" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed" ta-toolbar-button-class="btn btn-default btn-sm"></text-angular>
+  <br/>
+  <h4>Storyline</h4>
+  <text-angular name="bodyModel" ng-model="bodyModel" ta-text-editor-class="form-content" ta-html-editor-class="form-content" ta-focussed-class="focussed" ta-toolbar-button-class="btn btn-default btn-sm"></text-angular>
+  <button class="btn btn-default pull-right" ng-click="updateArticle()" ng-show="edition">Update Article</button>
+  <button class="btn btn-danger pull-right" ng-click="deleteArticle()" ng-show="edition">Delete Article</button>
+</div>
+
